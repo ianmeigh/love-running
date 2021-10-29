@@ -3,6 +3,8 @@
 :root {
     --body-color: #3a3a3a;
     --header-logo-color: #252525;
+
+    --header-font-family: 'Oswald', sans-serif;
 }
 
 html {
@@ -28,7 +30,7 @@ body {
 /* headings and logos */
 
 h1, h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--header-font-family);
     text-transform: uppercase;
     letter-spacing: 4px;
     color: var(--header-logo-color);
@@ -76,6 +78,8 @@ h1, h2 {
     height: 600px;
     width: 100%;
     overflow: hidden;  /* Can be used as alternative for clear:both; */
+
+    position: relative;
 }
 
 #hero-image {
@@ -83,6 +87,30 @@ h1, h2 {
     width: 100%;
     background: url('../images/hero-image.webp') no-repeat center center;
     animation: hero-zoom 4s forwards;
+}
+
+/* hero text */
+
+#hero-text, #hero-text h2{
+    color: white;
+}
+
+#hero-text {
+    font-size: 130%;
+    font-family: var(--header-font-family);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    height: 200px;
+    width: 300px;
+
+    padding: 40px 0 0 10px;
+    background-color: rgba(241, 109, 107, 0.7);
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
 }
 
 /* animation of hero image */
