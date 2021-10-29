@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
+:root {
+    --body-color: #3a3a3a;
+    --header-logo-color: #252525;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -17,7 +22,7 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    color: #3a3a3a;
+    color: var(--body-color);
 }
 
 /* headings and logos */
@@ -26,10 +31,70 @@ h1, h2 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #252525;
+    color: var(--header-logo-color);
 }
 
 #logo {
     float: left;
     font-size: 280%;
+}
+
+/* navigation */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    float: right;
+}
+
+#menu, #logo {
+    line-height: 75px;
+}
+
+#menu li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid var(--body-color);
+}
+
+.active-link {
+    border-bottom: 1px solid var(--body-color);
+}
+
+/* hero image */
+
+#hero-container {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;  /* Can be used as alternative for clear:both; */
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.webp') no-repeat center center;
+    animation: hero-zoom 4s forwards;
+}
+
+/* animation of hero image */
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1)
+    }
+    to {
+        transform: scale(1);
+    }
 }
