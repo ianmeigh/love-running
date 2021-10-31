@@ -11,7 +11,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -29,7 +31,8 @@ body {
 
 /* headings and logos */
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--header-font-family);
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -50,7 +53,8 @@ h1, h2 {
     float: right;
 }
 
-#menu, #logo {
+#menu,
+#logo {
     line-height: 75px;
 }
 
@@ -78,7 +82,8 @@ h1, h2 {
 #hero-container {
     height: 600px;
     width: 100%;
-    overflow: hidden;  /* Can be used as alternative for clear:both; */
+    overflow: hidden;
+    /* Can be used as alternative for clear:both; */
 
     position: relative;
 }
@@ -92,7 +97,8 @@ h1, h2 {
 
 /* hero text */
 
-#hero-text, #hero-text h2{
+#hero-text,
+#hero-text h2 {
     color: white;
 }
 
@@ -120,9 +126,11 @@ h1, h2 {
     from {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1)
     }
+
     to {
         transform: scale(1);
     }
@@ -134,21 +142,21 @@ h1, h2 {
     height: 600px;
 }
 
-#left-ethos {
+#left-about {
     background-color: blue;
     padding-top: 30px;
     width: 33%;
     float: left;
 }
 
-#right-ethos {
+#right-about {
     background-color: silver;
     padding-top: 30px;
     width: 33%;
     float: right;
 }
 
-#center-ethos {
+#center-about {
     background-color: green;
     width: 33%;
     margin: 0 auto;
