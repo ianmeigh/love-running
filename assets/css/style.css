@@ -32,7 +32,8 @@ body {
 /* headings and logos */
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: var(--header-font-family);
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -142,22 +143,48 @@ h2 {
     height: 600px;
 }
 
+#club-ethos > div {
+    border: 1px solid red;
+}
+
 #left-about {
-    background-color: blue;
     padding-top: 30px;
     width: 33%;
     float: left;
 }
 
 #right-about {
-    background-color: silver;
     padding-top: 30px;
     width: 33%;
     float: right;
 }
 
 #center-about {
-    background-color: green;
     width: 33%;
     margin: 0 auto;
+}
+
+hr {
+    border-top: 1px solid var(--body-color);
+    width: 100%;
+    margin: 5px 0;
+}
+
+.about-heading{
+    width: 60%;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.left-about-heading {
+    float: right;
+}
+
+.right-about-heading {
+    float: left;
+}
+
+.right-about-heading h3, .right-about-heading p{
+    text-align: right;
 }
