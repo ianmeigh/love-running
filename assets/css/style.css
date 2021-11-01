@@ -216,14 +216,14 @@ hr {
     background: url("../images/dublin-city.webp") no-repeat center / cover;
     width: 100%;
     overflow: hidden;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 #times div {
     color: var(--white-font);
     background: linear-gradient(180deg, #00000088 54%, #ffffff44 90%);
     height: 300px;
-    flex: 1;
     padding: 30px 10px 0;
     text-align: center;
     border: 2px solid white;
