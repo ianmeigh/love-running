@@ -232,3 +232,26 @@ hr {
 #times h3 {
     color: var(--white-font)
 }
+
+/* footer */
+
+footer {
+    height: 150px;
+    
+}
+
+footer ul {
+    text-align: center;
+    
+}
+
+footer li {
+    display: inline;
+}
+
+footer i {
+font-size: 160%;
+margin: 1%;
+padding: 5%;
+color: var(--dark-font);
+}
