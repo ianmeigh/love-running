@@ -19,22 +19,42 @@
     <nav>
       <ul id="menu">
         <li>
-          <a href="index.html" class="active-link">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li>
           <a href="gallery.html">Gallery</a>
         </li>
         <li>
-          <a href="#">Sign Up</a>
+          <a href="sign-up.html" class="active-link">Sign Up</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <section style="clear: both;">
-    
-    <div>Sign-up form</div>
-    
+  <section class="form-section">
+    <form class="signup-form" method="POST" action="https://formdump.codeinstitute.net/">
+      <h2>Let's get you signed up! <i class="fas fa-heartbeat"></i></h2>
+
+      <label for="fname">First Name</label>
+      <input id="fname" class="text-input" type="text" name="first_name" required>
+
+      <label for="lname">Last Name</label>
+      <input id="lname" class="text-input" type="text" name="last_name" required>
+
+      <label for="email">Email Address</label>
+      <input id="email" class="text-input" type="email" name="email_address" required>
+
+      <label for="road">Road</label>
+      <input id="road" type="radio" name="running_preference" value="road" required>
+
+      <label for="trail">Trail</label>
+      <input id="trail" type="radio" name="running_preference" value="trail">
+
+      <label for="both">Both</label>
+      <input id="both" type="radio" name="running_preference" value="both">
+
+      <input class="join-button" type="submit" value="Let's Run!">
+    </form>
   </section>
 
   <footer>

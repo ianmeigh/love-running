@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
 :root {
-    --dark-font: #3a3a3a;
-    --white-font: #fafafa;
-    --header-logo-color: #252525;
-    --header-font-family: 'Oswald', sans-serif;
+  --dark-font: #3a3a3a;
+  --white-font: #fafafa;
+  --header-logo-color: #252525;
+  --header-font-family: 'Oswald', sans-serif;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    color: var(--dark-font);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: var(--dark-font);
 }
 
 /* headings and logos */
@@ -34,317 +34,373 @@ body {
 h1,
 h2,
 h3 {
-    font-family: var(--header-font-family);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: var(--header-logo-color);
+  font-family: var(--header-font-family);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--header-logo-color);
 }
 
 #logo {
-    float: left;
-    font-size: 280%;
-    margin-left: 30px;
+  float: left;
+  font-size: 280%;
+  margin-left: 30px;
 }
 
 /* navigation */
 
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    float: right;
+  font-size: 110%;
+  letter-spacing: 4px;
+  float: right;
 }
 
 #menu,
 #logo {
-    line-height: 75px;
+  line-height: 75px;
 }
 
 #menu li {
-    display: inline;
-    list-style-type: none;
-    margin-right: 30px;
+  display: inline;
+  list-style-type: none;
+  margin-right: 30px;
 }
 
 #menu a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 #menu a:hover {
-    border-bottom: 1px solid var(--dark-font);
+  border-bottom: 1px solid var(--dark-font);
 }
 
 .active-link {
-    border-bottom: 1px solid var(--dark-font);
+  border-bottom: 1px solid var(--dark-font);
 }
 
 /* hero image */
 
 #hero-container {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-    /* Can be used as alternative for clear:both; */
-    position: relative;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  /* Can be used as alternative for clear:both; */
+  position: relative;
 }
 
 #hero-image {
-    height: 600px;
-    width: 100%;
-    background: url('../images/hero-image.webp') no-repeat center top;
-    animation: hero-zoom 4s forwards;
+  height: 600px;
+  width: 100%;
+  background: url('../images/hero-image.webp') no-repeat center top;
+  animation: hero-zoom 4s forwards;
 }
 
 /* hero text */
 
 #hero-text,
 #hero-text h2 {
-    color: white;
+  color: white;
 }
 
 #hero-text {
-    font-size: 130%;
-    font-family: var(--header-font-family);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    height: 200px;
-    width: 300px;
-    padding: 40px 0 0 10px;
-    background-color: rgba(241, 109, 107, 0.7);
-    bottom: 30px;
-    right: 150px;
-    position: absolute;
+  font-size: 130%;
+  font-family: var(--header-font-family);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  height: 200px;
+  width: 300px;
+  padding: 40px 0 0 10px;
+  background-color: rgba(241, 109, 107, 0.7);
+  bottom: 30px;
+  right: 150px;
+  position: absolute;
 }
 
 /* animation of hero image */
 
 @keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(1);
+  }
 
-    50% {
-        transform: scale(1.1)
-    }
+  50% {
+    transform: scale(1.1)
+  }
 
-    to {
-        transform: scale(1);
-    }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* club ethos */
 
 #club-ethos {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 #ethos-main-heading {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 280%;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 280%;
 }
 
 #left-about {
-    padding-top: 30px;
-    width: 33%;
-    float: left;
+  padding-top: 30px;
+  width: 33%;
+  float: left;
 }
 
 #right-about {
-    padding-top: 30px;
-    width: 33%;
-    float: right;
+  padding-top: 30px;
+  width: 33%;
+  float: right;
 }
 
 #center-about {
-    width: 33%;
-    margin: 0 auto;
+  width: 33%;
+  margin: 0 auto;
 }
 
 hr {
-    border-top: 1px solid var(--dark-font);
-    width: 100%;
-    margin: 5px 0;
+  border-top: 1px solid var(--dark-font);
+  width: 100%;
+  margin: 5px 0;
 }
 
 .about-heading {
-    width: 60%;
-    line-height: 20px;
-    clear: both;
-    margin-bottom: 50px;
+  width: 60%;
+  line-height: 20px;
+  clear: both;
+  margin-bottom: 50px;
 }
 
 .left-about-heading {
-    float: right;
+  float: right;
 }
 
 .right-about-heading {
-    float: left;
+  float: left;
 }
 
 .right-about-heading h3,
 .right-about-heading p {
-    text-align: right;
+  text-align: right;
 }
 
 #circle-container {
-    height: 350px;
-    width: 350px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    margin: 0 auto;
+  height: 350px;
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 0 auto;
 
 }
 
 #circle-cover-bg {
-    background: url('../images/ethos-center-image.jpg') no-repeat center center;
-    height: 100%;
-    border-radius: 50%;
-    background-size: cover;
+  background: url('../images/ethos-center-image.jpg') no-repeat center center;
+  height: 100%;
+  border-radius: 50%;
+  background-size: cover;
 }
 
 /* event times */
 
 #times {
-    background: url("../images/dublin-city.webp") no-repeat center / cover;
-    width: 100%;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+  background: url("../images/dublin-city.webp") no-repeat center / cover;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 #times div {
-    color: var(--white-font);
-    background-color: rgba(0, 0, 0, 0.53);
-    /* background: linear-gradient(180deg, #00000088 54%, #ffffff44 100%); */
-    height: 300px;
-    padding: 30px 10px;
-    text-align: center;
-    border: 2px solid white;
+  color: var(--white-font);
+  background-color: rgba(0, 0, 0, 0.53);
+  /* background: linear-gradient(180deg, #00000088 54%, #ffffff44 100%); */
+  height: 300px;
+  padding: 30px 10px;
+  text-align: center;
+  border: 2px solid white;
 }
 
 #times h3 {
-    color: var(--white-font)
+  color: var(--white-font)
 }
 
 /* footer */
 
 footer {
-    height: 150px;
+  height: 150px;
 
 }
 
 footer ul {
-    text-align: center;
+  text-align: center;
 
 }
 
 footer li {
-    display: inline;
+  display: inline;
 }
 
 footer i {
-    font-size: 160%;
-    margin: 1%;
-    padding: 5%;
-    color: var(--dark-font);
+  font-size: 160%;
+  margin: 1%;
+  padding: 5%;
+  color: var(--dark-font);
 }
 
 /* gallery */
 
 #photos {
-    clear: both;
-    line-height: 0;
-    column-count: 4;
-    column-gap: 0;
+  clear: both;
+  line-height: 0;
+  column-count: 4;
+  column-gap: 0;
 }
 
 #photos>img {
-    width: 100%;
+  width: 100%;
+}
+
+/* form */
+
+.form-section {
+  clear: left;
+  background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+}
+
+.signup-form {
+  margin: 150px 10% 0 0;
+  color: #fff;
+  background-color: rgba(60, 60, 60, 0.6);
+  max-width: 400px;
+  position: absolute;
+  left: 10%;
+  padding: 30px;
+}
+
+.signup-form h2 {
+  color: #fafafa;
+  margin-bottom: 20px;
+  font-size: 130%;
+}
+
+.text-input {
+  background: transparent;
+  color: #fafafa;
+  width: 100%;
+  height: 25px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+}
+
+.text-input:hover {
+  border-color: #f16c6b;
+}
+
+.join-button {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 100%;
+  background-color: #f16c6b;
+  color: #fafafa;
+  display: block;
+}
+
+.join-button:hover {
+  background-color: #fafafa;
+  color: #f16c6b;
 }
 
 /* media queries */
 
 @media screen and (max-width: 1200px) {
-    #club-ethos {
-        width: 65%;
-        margin: 0 auto;
-    }
+  #club-ethos {
+    width: 65%;
+    margin: 0 auto;
+  }
 
-    #ethos-main-heading {
+  #ethos-main-heading {
 
-        padding: 30px 0;
-        margin: 0;
+    padding: 30px 0;
+    margin: 0;
 
-    }
+  }
 
-    #left-about,
-    #right-about {
-        width: 100%;
-        float: left;
-        padding: 0;
-    }
+  #left-about,
+  #right-about {
+    width: 100%;
+    float: left;
+    padding: 0;
+  }
 
-    #center-about {
-        clear: both;
-        width: 100%;
-        float: left;
-        margin-bottom: 30px;
-    }
+  #center-about {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+  }
 
-    hr {
-        display: none;
-    }
+  hr {
+    display: none;
+  }
 
-    #times div {
-        grid-column: 1 / -1;
-        height: auto;
-    }
+  #times div {
+    grid-column: 1 / -1;
+    height: auto;
+  }
 
-    #photos {
-        column-count: 3;
-    }
+  #photos {
+    column-count: 3;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    #menu {
-        clear: left;
-        float: left;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        line-height: 25px;
-    }
+  #menu {
+    clear: left;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
 
-    #hero-text {
-        left: 0;
-    }
+  #hero-text {
+    left: 0;
+  }
 
-    #club-ethos {
-        width: 90%;
-        margin: 0 auto;
-    }
+  #club-ethos {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-    .left-about-heading,
-    .right-about-heading {
-        width: inherit;
-    }
+  .left-about-heading,
+  .right-about-heading {
+    width: inherit;
+  }
 
-    .left-about-heading h3,
-    .right-about-heading h3 {
-        width: 100%;
-        text-align: center;
-    }
+  .left-about-heading h3,
+  .right-about-heading h3 {
+    width: 100%;
+    text-align: center;
+  }
 
-    .left-about-heading p,
-    .right-about-heading p {
-        text-align: center;
-        padding: 0 20px;
-    }
+  .left-about-heading p,
+  .right-about-heading p {
+    text-align: center;
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    #photos {
-        column-count: 2;
-    }
+  #photos {
+    column-count: 2;
+  }
 }
