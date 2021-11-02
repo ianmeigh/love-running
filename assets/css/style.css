@@ -279,21 +279,24 @@ footer i {
     }
 
     #ethos-main-heading {
-   
+
         padding: 30px 0;
         margin: 0;
 
     }
 
-    #left-about, #right-about {
+    #left-about,
+    #right-about {
         width: 100%;
-        float: none;
+        float: left;
         padding: 0;
     }
 
     #center-about {
         clear: both;
         width: 100%;
+        float:left;
+        margin-bottom: 30px;
     }
 
     hr {
