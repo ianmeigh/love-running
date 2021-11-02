@@ -301,6 +301,10 @@ footer i {
         grid-column: 1 / -1;
         height: auto;
     }
+
+    #photos {
+        column-count: 3;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -336,5 +340,11 @@ footer i {
     .right-about-heading p {
         text-align: center;
         padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
     }
 }
